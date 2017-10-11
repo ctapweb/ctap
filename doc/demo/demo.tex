@@ -7,8 +7,11 @@
 \usecolortheme{beaver}
 \bibliographystyle{apalike}
 
-\title[CTAP Demo]{CTAP: A Web-Based Tool Supporting Automatic Complexity
-Analysis}
+%\title[CTAP Demo]{Common Text Analysis Platform} 
+%\subtitle{A Web-Based Tool Supporting Automatic Complexity Analysis}
+
+\title{Comprehensive Complexity Analysis of Large-scale Learner Corpora with the Common Text Analysis Platform}
+
 \author[X.B. Chen \& D. Meurers]{Xiaobin Chen, \\
 	xiaobin.chen@uni-tuebingen.de \\
 	\and 
@@ -29,7 +32,7 @@ Analysis}
 			\item assessing text readability 
 			\item modeling processing difficulty of sentences
 			\item analyzing/scoring student writings
-			\item comparing languages typologies and their historical development
+			\item comparing language typologies and their historical development
 			\item attributing authorship
 			\item identifying native languages
 			\item detecting plagiarism
@@ -41,7 +44,7 @@ Analysis}
 
 
 	\begin{frame}
-		\frametitle{Existing tools for for text analysis}
+		\frametitle{Existing tools for text analysis}
 
 		A number of tools have been released in the past few years. e.g.
 
@@ -65,18 +68,26 @@ Analysis}
 		\frametitle{Problems with existing tools}
 
 		\begin{itemize}
-			\item Duplicated work: significant amount of feature overlap
-			\item (Re)Usability of tools and analysis components
+			\item Limited usability of tools and analysis components
 				  \begin{itemize}
-					  \item OS-dependent standalone deploy
+					  \item OS-dependent standalone deployment
 					  \item Source code release hard to use for non-programmers
-					  \item Unfriendly user interface
+					  \item Unfriendly user interface: command line interface,
+							choice of features...
 				  \end{itemize}
+			\item Limited extensibility
+				 \begin{itemize}
+					 \item Close source commercial systems
+					 \item Non-reusable analysis components
+				 \end{itemize}
+			\item Collaborative development difficult to implement
+				 \begin{itemize}
+					 \item Significant feature overlap
+					 \item Duplication of efforts
+				 \end{itemize}
 			\item Feature proliferation, e.g.
 				  \begin{itemize}
 					  \item CohMetrix: 106 metrics
-					  \item \citet{Housen-15}: $>$200 features for measuring L2
-					  complexity
 					  \item \citet{Vajjala-15}: $>$200 features for readability
 					  assessment
 				  \end{itemize}
@@ -90,9 +101,10 @@ Analysis}
 
 		\begin{itemize}
 			\item Web-based
-			\item user-friendly
-			\item modularized and reusable in terms of analysis components
-			\item supports real-life use by ordinary users
+			\item user-friendly, supporting real-life use by ordinary users
+			\item comprehensive set of linguistic features
+			\item freedom to choose extracted features
+			\item modularized and reusable analysis components
 		\end{itemize}
 	\end{frame}
 
@@ -115,12 +127,11 @@ Analysis}
 				  Helps users manage the language materials that need to be
 				  analyzed. 
 				  \begin{itemize}
-					  \item use folders to groups corpora
-					  \item use corpora to hold texts
-					  \item use tags to label texts based on e.g. document genre,
+					  \item Folders: grouping corpora
+					  \item Corpora: holding texts
+					  \item Tags: labeling texts based on e.g. document genre,
 					  target reader levels, etc.
 				  \end{itemize}
-
 		\end{columns}
 	\end{frame}
 
@@ -202,15 +213,22 @@ Analysis}
 			\item Replicating studies that involved text analysis to validate the
 			system and identify other function needs 
 			\item Model construction functionality (machine learning)
+			\item Acurracy measures
+			\item API supporting analysis of multiple languages (en, de, es,
+				 fr...), non-plain text file formats, etc. 
 		\end{itemize}
 
 		More details available in the paper:
 
 		\scriptsize{
-		Chen, X.B., Meurers, D. (2016). CTAP: A Web-Based Tool Supporting
-		Automatic Complexity Analysis. In \textit{Proceedings of The Workshop on
-		Computational Linguistics for Linguistic Complexity}. Osaka, Japan. The
-		International Committee on Computational Linguistics.}
+			 Chen, X. B., \& Meurers, D. (2016). CTAP: A Web-based tool supporting
+			 automatic complexity analysis. In D. Brunato, F. Dell'Orletta, G.
+			 Venturi, T. François, \& P. Blache (Eds.), \textit{Proceedings of the
+			 Computational Linguistics for Linguistic Complexity Workshop at the
+			 26th International Conference on Computational Linguistics (COLING
+		2016)}, Osaka, Japan, 11 December (pp. 113-119). The International
+		Committee on Computational Linguisitcs.
+		}
 
 	\end{frame}
 

@@ -214,3 +214,5 @@ TSWLatexianTemp*
 # auto folder when using emacs and auctex 
 /auto/*
 
+ctapweb.github.io/
+ctap-web.wiki/
