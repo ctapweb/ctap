@@ -4,7 +4,7 @@ This is the parent project of *ctap-web* and *ctap-feature*. It includes only th
 
 ## Installation
 
-If you want to install the CTAP web module on your own server, you can either use the readymade [dockerized version](https://github.com/commul/ctap-docker) or follow these steps.
+If you want to install the CTAP web module on your own server, you can either use the readymade [dockerized version](https://gitlab.inf.unibz.it/commul/docker/ctap) or follow these steps.
 
 1. Install git, maven, tomcat, postgres and jdk
 ```
