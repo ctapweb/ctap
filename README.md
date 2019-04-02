@@ -118,4 +118,4 @@ Caused by: java.lang.ClassNotFoundException: com.thoughtworks.xstream.io.Hierarc
 ```
 Delete maven, manually delete the .m2 folder with all its content, reinstall maven, reinstall the 2 .jars from point 3 and run mvn clean install.
 
-8. Initialize the database by going to http://localhost:8080/ctapWebApp#initdb (the password is the one set as INITDBPASSWD in ServerProperties.java)
+8. Initialize the database by going to http://localhost:8080/ctapWebApp#initdb (the password is the one set as INITDBPASSWD in ctap-web/src/main/java/com/ctapweb/web/server/ServerProperties.java)
