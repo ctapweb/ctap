@@ -11,12 +11,24 @@ If you want to install the CTAP web module on your own server, you can either us
 apt-get update && apt-get install -y git maven tomcat8 openjdk-8-jdk postgresql
 ```
 2. Get all the source code from github
+
+For the CTAP that only works for English:
+
 ```
 mkdir /opt/ctap
 git clone https://github.com/ctapweb/ctap.git /opt/ctap
 git clone https://github.com/ctapweb/ctap-web.git /opt/ctap/ctap-web
 git clone https://github.com/ctapweb/ctap-feature.git /opt/ctap/ctap-feature
 ```
+
+For the CTAP that also works for German:
+```
+mkdir /opt/ctap
+git clone https://github.com/ctapweb/ctap.git /opt/ctap
+git clone -b ctap_german --depth=1 https://github.com/zweiss/multilingual-ctap-web.git /opt/ctap/ctap-web
+git clone -b ctap_german --depth=1 https://github.com/zweiss/multilingual-ctap-feature.git /opt/ctap/ctap-feature
+```
+
 3. Install the two not publicly available dependencies locally
 ```
 mkdir /opt/sources
@@ -121,6 +133,8 @@ Delete maven, manually delete the .m2 folder with all its content, reinstall mav
 Check the contents of the resulting .war archive by comparing it to the contents of the file war-contents.txt obtained with the command:
 
 jar tvf ~/.m2/repository/com/ctapweb/ctap-web/1.0.0-SNAPSHOT/ctap-web-1.0.0-SNAPSHOT.war > war-contents.txt
+
+This file lists the contents of a war that works for English and German.
 
 
 8. Initialize the database by going to http://localhost:8080/ctapWebApp#initdb (the password is the one set as INITDBPASSWD in ctap-web/src/main/java/com/ctapweb/web/server/ServerProperties.java)
