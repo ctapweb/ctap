@@ -21,7 +21,7 @@ git clone https://github.com/ctapweb/ctap-web.git /opt/ctap/ctap-web
 git clone https://github.com/ctapweb/ctap-feature.git /opt/ctap/ctap-feature
 ```
 
-For the CTAP that also works for German:
+For the CTAP that works for English and German:
 ```
 mkdir /opt/ctap
 git clone https://github.com/ctapweb/ctap.git /opt/ctap
