@@ -116,15 +116,6 @@ Caused by: java.lang.ClassNotFoundException: com.thoughtworks.xstream.io.Hierarc
 [ERROR] After correcting the problems, you can resume the build with the command
 [ERROR]   mvn <goals> -rf :ctap-web
 ```
-try to add the following code to the plugins section of the pom.xml of ctap-web:
-```
-<plugin>
-	<artifactId>maven-war-plugin</artifactId>
-	<version>3.0.0</version>
-	<configuration>
-		<warSourceDirectory>src</warSourceDirectory>
-		<failOnMissingWebXml>false</failOnMissingWebXml>
-	</configuration>
-</plugin>
-```
+Delete maven, manually delete the .m2 folder with all its content, reinstall maven, reinstall the 2 .jars from point 3 and run mvn clean install.
+
 8. Initialize the database by going to http://localhost:8080/ctapWebApp#initdb (the password is the one set as INITDBPASSWD in ServerProperties.java)
