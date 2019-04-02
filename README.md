@@ -56,64 +56,12 @@ com.google.inject.ProvisionException: Unable to provision, see the following err
 
 1 error
     at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1025)
-    at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1051)
-    at org.eclipse.sisu.space.AbstractDeferredClass.get(AbstractDeferredClass.java:48)
-    at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
-    at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:53)
-    at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:65)
-    at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
-    at org.eclipse.sisu.bean.BeanScheduler$Activator.onProvision(BeanScheduler.java:176)
-    at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:126)
-    at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
-    at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:63)
-    at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:45)
-    at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
-    at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
-    at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
-    at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
-    at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
-    at org.eclipse.sisu.plexus.LazyPlexusBean.getValue(LazyPlexusBean.java:51)
-    at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:263)
-    at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:255)
-    at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getConfiguredMojo(DefaultMavenPluginManager.java:517)
-    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:121)
-    at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
-    at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
-    at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
-    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
-    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
-    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
-    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
-    at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
-    at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
-    at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
-    at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
-    at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
-    at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
-    at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-    at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-    at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-    at java.lang.reflect.Method.invoke(Method.java:498)
-    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
-    at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
-    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+    ...
     at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 Caused by: java.lang.NoClassDefFoundError: com/thoughtworks/xstream/io/HierarchicalStreamDriver
     at org.apache.maven.plugin.war.AbstractWarMojo.<init>(AbstractWarMojo.java:316)
     at org.apache.maven.plugin.war.WarMojo.<init>(WarMojo.java:49)
-    at org.apache.maven.plugin.war.WarMojo$$FastClassByGuice$$7447a4e7.newInstance(<generated>)
-    at com.google.inject.internal.cglib.reflect.$FastConstructor.newInstance(FastConstructor.java:40)
-    at com.google.inject.internal.DefaultConstructionProxyFactory$1.newInstance(DefaultConstructionProxyFactory.java:61)
-    at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:105)
-    at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:32)
-    at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:89)
-    at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:115)
-    at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:133)
-    at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:68)
-    at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:87)
-    at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:267)
-    at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
-    at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1103)
+ 	...
     at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
     ... 42 more
 Caused by: java.lang.ClassNotFoundException: com.thoughtworks.xstream.io.HierarchicalStreamDriver
@@ -171,12 +119,12 @@ Caused by: java.lang.ClassNotFoundException: com.thoughtworks.xstream.io.Hierarc
 try to add the following code to the plugins section of the pom.xml of ctap-web:
 ```
 <plugin>
-		<artifactId>maven-war-plugin</artifactId>
-		<version>3.0.0</version>
-		<configuration>
-			<warSourceDirectory>src</warSourceDirectory>
-			<failOnMissingWebXml>false</failOnMissingWebXml>
-		</configuration>
+	<artifactId>maven-war-plugin</artifactId>
+	<version>3.0.0</version>
+	<configuration>
+		<warSourceDirectory>src</warSourceDirectory>
+		<failOnMissingWebXml>false</failOnMissingWebXml>
+	</configuration>
 </plugin>
 ```
 8. Initialize the database by going to http://localhost:8080/ctapWebApp#initdb (the password is the one set as INITDBPASSWD in ServerProperties.java)
