@@ -139,4 +139,4 @@ This file lists the contents of a war that works for English and German.
 
 8. Initialize the database by going to http://localhost:8080/ctapWebApp#initdb (the password is the one set as INITDBPASSWD in ctap-web/src/main/java/com/ctapweb/web/server/ServerProperties.java)
 
-9.  Login with the email and password from ctap-web/src/main/java/com/ctapweb/web/server/ServerProperties.java and go to the Analysis Engine at the bottom of the left column (http://localhost:8080/ctap-web-1.0.0-SNAPSHOT/#adminae), push the button "Import AE"
+9.  Create an account with the email and password from ctap-web/src/main/java/com/ctapweb/web/server/ServerProperties.java, login and go to the Analysis Engine at the bottom of the left column (http://localhost:8080/ctap-web-1.0.0-SNAPSHOT/#adminae), push the button "Import AE"
