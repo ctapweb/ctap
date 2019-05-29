@@ -141,4 +141,4 @@ This file lists the contents of a war that works for English and German.
 
 9.  Create an account with the email and password from ctap-web/src/main/java/com/ctapweb/web/server/ServerProperties.java, signin at the URL http://localhost:8080/ctap-web-1.0.0-SNAPSHOT/#signin, go to the Analysis Engine at the bottom of the left column (http://localhost:8080/ctap-web-1.0.0-SNAPSHOT/#adminae), push the button "Import AE". Wait a couple of seconds. A list of AEs will appear on the page.
 
-10. When you test the tool, make sure the corpus you upload is long enough. I uploaded 1 test with 2 short phrases and the analysis didn't work. Then I uploaded a longer text and it worked. Achtung!
+10. When you test the tool, make sure the corpus you upload is long enough. I uploaded 1 text with 2 short phrases and the analysis didn't work. Then I uploaded a longer text and it worked. Achtung!
