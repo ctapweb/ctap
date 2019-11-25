@@ -134,7 +134,7 @@ Check the contents of the resulting .war archive by comparing it to the contents
 
 jar tvf ~/.m2/repository/com/ctapweb/ctap-web/1.0.0-SNAPSHOT/ctap-web-1.0.0-SNAPSHOT.war > war-contents.txt
 
-This file lists the contents of a war that works for English and German.
+This file lists the contents of a war that works for English and German. It does not include the Italian code yet.
 
 
 8. Initialize the database by going to http://localhost:8080/ctapWebApp#initdb (the password is the one set as INITDBPASSWD in ctap-web/src/main/java/com/ctapweb/web/server/ServerProperties.java)
