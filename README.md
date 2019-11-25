@@ -1,6 +1,6 @@
 #ctap
 
-This is the parent project of *ctap-web* and *ctap-feature*. It includes only the POM definition and some docs. The actual code of the CTAP projects is in the two modules. 
+This is the parent project of [ctap-web](https://github.com/commul/multilingual-ctap-web) (the GUI) and [ctap-feature](https://github.com/commul/multilingual-ctap-feature) (the feature extraction system). It includes only the POM definition and some docs. The actual code of the CTAP projects is in the two modules. 
 
 ## Installation
 
@@ -21,12 +21,12 @@ git clone https://github.com/ctapweb/ctap-web.git /opt/ctap/ctap-web
 git clone https://github.com/ctapweb/ctap-feature.git /opt/ctap/ctap-feature
 ```
 
-For the CTAP that works for English and German:
+For the CTAP that works for English, German and Italian:
 ```
 mkdir /opt/ctap
-git clone https://github.com/ctapweb/ctap.git /opt/ctap
-git clone -b ctap_german --depth=1 https://github.com/zweiss/multilingual-ctap-web.git /opt/ctap/ctap-web
-git clone -b ctap_german --depth=1 https://github.com/zweiss/multilingual-ctap-feature.git /opt/ctap/ctap-feature
+git clone https://github.com/commul/ctap.git /opt/ctap
+git clone -b ctap_german --depth=1 https://github.com/commul/multilingual-ctap-web.git /opt/ctap/ctap-web
+git clone -b ctap_german --depth=1 https://github.com/commul/multilingual-ctap-feature.git /opt/ctap/ctap-feature
 ```
 
 3. Install the two not publicly available dependencies locally
