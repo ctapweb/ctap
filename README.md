@@ -35,8 +35,10 @@ mkdir /opt/sources
 cd /opt/sources
 curl -L -o org.moxieapps.gwt.highcharts-1.7.0.jar https://downloads.sourceforge.net/project/gwt-highcharts/1.7.0/org.moxieapps.gwt.highcharts-1.7.0.jar
 curl -L -o org.moxieapps.gwt.uploader-1.1.0.jar https://downloads.sourceforge.net/project/gwt-uploader/1.1.0/org.moxieapps.gwt.uploader-1.1.0.jar
+curl -L -o anna-3.61.jar https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/mate-tools/anna-3.61.jar
 mvn install:install-file -Dfile=/opt/sources/org.moxieapps.gwt.highcharts-1.7.0.jar -DgroupId=org.moxieapps.gwt -DartifactId=highcharts -Dversion=1.7.0 -Dpackaging=jar
 mvn install:install-file -Dfile=/opt/sources/org.moxieapps.gwt.uploader-1.1.0.jar -DgroupId=org.moxieapps.gwt -DartifactId=uploader -Dversion=1.1.0 -Dpackaging=jar
+mvn install:install-file -Dfile=/opt/sources/anna-3.61.jar -DgroupId=com.googlecode.mate-tools -DartifactId=anna -Dversion=3.61 -Dpackaging=jar
 ```
 4. Edit  `/opt/ctap/ctap-web/src/main/java/com/ctapweb/web/server/ServerProperties.java` and set the DBPASSWD and the INITDBPASSWD.
 5. Create the user and the database in postgres
