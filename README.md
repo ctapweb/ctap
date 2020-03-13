@@ -70,4 +70,31 @@ This file lists the contents of a war that works for English, German and Italian
 
 9.  Go to the URL http://localhost:8080/ctap-web-1.0.0-SNAPSHOT/#signup and create an account with the email and password from ctap-web/src/main/java/com/ctapweb/web/server/ServerProperties.java. Once loged in, go to the Analysis Engine at the bottom of the left column (http://localhost:8080/ctap-web-1.0.0-SNAPSHOT/#adminae), push the button "Import AE". Wait a couple of seconds. A list of AEs will appear on the page.
 
-10. When you test the tool, make sure the corpus you upload is long enough. I uploaded 1 text with 2 short phrases and the analysis didn't work. Then I uploaded a longer text and it worked. Achtung!
+10. Follow the multilingual.ctap-user-guide for instructions on how to use CTAP.
+
+11. For developers, there is multilingual-CTAP-documentation.odt
+
+
+```
+@ARTICLE{chenmeurersctap,
+       author = {{Chen}, X. and {Meurers}, D.},
+        title = "{CTAP: A Web-Based Tool Supporting Automatic Complexity Analysis}",
+      volume = {Proceedings of the Workshop on Computational Linguistics for Linguistic Complexity (CL4LC)},
+     keywords = {linguistic complexity - readability - Italian - text analysis - cross-lingual analysis},
+         year = 2016,
+        month = December,
+       adsurl = {https://www.aclweb.org/anthology/W16-4113}
+}
+```
+
+```
+@ARTICLE{okininafreyweissctap,
+       author = {{Okinina}, N., {Frey}, J. C. and {Weiss}, Z.},
+        title = "{CTAP for Italian: Integrating Components for the Analysis of Italian into a Multilingual Linguistic Complexity Analysis Tool}",
+      volume = {Proceedings of the Twelfth International Conference on Language Resources and Evaluation (LREC 2020)},
+     keywords = {linguistic complexity - readability - Italian - text analysis - cross-lingual analysis},
+         year = 2020,
+        month = May
+}
+```
+
